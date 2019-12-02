@@ -1,0 +1,2 @@
+include ':app', ':ezypayaepssdk'
+rootProject.name='SampleSDK'
