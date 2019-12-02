@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 
 ;
 
-public class TestActivity extends AppCompatActivity {
+class TestActivity extends AppCompatActivity {
 
 
     private TextView clickMe;
