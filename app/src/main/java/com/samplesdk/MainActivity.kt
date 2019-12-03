@@ -12,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        val intent= Intent(this,EzypayAEPS::class.java)
+        startActivity(intent)
+
+
     }
 }
