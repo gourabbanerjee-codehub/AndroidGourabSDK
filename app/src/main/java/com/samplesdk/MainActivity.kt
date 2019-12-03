@@ -3,7 +3,7 @@ package com.samplesdk
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ezypayaepssdk.EzypayAEPS
+import com.example.ezypayaepssdk.EzyPayActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val intent= Intent(this,EzypayAEPS::class.java)
+        val intent= Intent(this,EzyPayActivity::class.java)
         startActivity(intent)
 
 
