@@ -12,7 +12,8 @@
         tools:node="replace"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EzyPayActivity"></activity>
+        <activity android:name=".EzyPayActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity android:name=".EzypayAEPS"></activity>
 
@@ -25,16 +26,16 @@
         </activity>
         <activity
             android:name="com.finopaytech.finosdk.activity.MainTransactionActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.finopaytech.finosdk.activity.DeviceSettingActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name="com.finopaytech.finosdk.fragments.BTDiscoveryFragment"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
