@@ -16,6 +16,7 @@ import com.finopaytech.finosdk.activity.MainTransactionActivity;
 import com.finopaytech.finosdk.encryption.AES_BC;
 import com.finopaytech.finosdk.helpers.Utils;
 import com.finopaytech.finosdk.models.ErrorSingletone;
+import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class EzyPayActivity extends AppCompatActivity {
 
     private TextView clickMe;
-    private EditText refid,amount;
+    private TextInputEditText refid,amount;
     private String RefID="",Amount="",TYPEID="",timeStamp="";
     private RadioGroup ItemtypeGroup;
 
@@ -33,12 +34,12 @@ public class EzyPayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_aeps);
+        setContentView(R.layout.activity_ezy_pay);
 
         timeStamp = String.valueOf(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
 
-        refid=findViewById(R.id.editText2);
-        amount=findViewById(R.id.editText3);
+        refid=findViewById(R.id.edtreq_id);
+        amount=findViewById(R.id.amount);
         refid.setText(timeStamp);
 
         RefID=refid.getText().toString();

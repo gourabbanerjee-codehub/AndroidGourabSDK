@@ -17,13 +17,13 @@
 
         <activity android:name=".EzypayAEPS"></activity>
 
-        <activity android:name=".TestActivity">
+       <!-- <activity android:name=".TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name="com.finopaytech.finosdk.activity.MainTransactionActivity"
             android:theme="@style/AppTheme.NoActionBar" />
