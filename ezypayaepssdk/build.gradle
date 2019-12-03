@@ -14,6 +14,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -39,4 +40,6 @@ dependencies {
     implementation 'de.greenrobot:greendao:2.1.0'
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation 'com.karumi:dexter:4.2.0'
+
+    implementation 'com.android.support:multidex:1.0.0'
 }
