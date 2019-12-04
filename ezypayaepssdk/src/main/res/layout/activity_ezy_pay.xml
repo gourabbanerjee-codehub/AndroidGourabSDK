@@ -95,17 +95,18 @@
                 android:text="Balance Enquiry" />
         </RadioGroup>
 
-        <com.google.android.material.textfield.TextInputLayout
+       <!-- <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/MyTextInputLayout"
+
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -115,22 +116,36 @@
                 android:hint="Request ID"
                 android:inputType="number"
                 android:maxLength="10"
-                style="@style/MyTextInputEditText"/>
+                />
 
-        </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>-->
+        <EditText
+            android:id="@+id/edtreq_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="15dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:hint="Ref id"
+            />
 
 
-        <com.google.android.material.textfield.TextInputLayout
+      <!--  <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/MyTextInputLayout"
+
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -140,25 +155,39 @@
                 android:hint="Merchant ID"
                 android:inputType="number"
                 android:maxLength="10"
-                style="@style/MyTextInputEditText"/>
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
+-->
+        <EditText
+            android:id="@+id/edtmer_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="15dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:hint="Merchant ID"
+            />
 
 
 
 
-
-        <com.google.android.material.textfield.TextInputLayout
+     <!--   <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/MyTextInputLayout">
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/amount"
@@ -166,12 +195,26 @@
                 android:layout_height="wrap_content"
                 android:hint="Amount"
                 android:inputType="number"
-                style="@style/MyTextInputEditText"/>
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+-->
 
 
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="15dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:hint="Amount"
+            />
 
 
 

@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class EzyPayActivity extends AppCompatActivity {
 
     private TextView clickMe;
-    private TextInputEditText refid,amount;
+    private EditText refid,amount;
     private String RefID="",Amount="",TYPEID="",timeStamp="";
     private RadioGroup ItemtypeGroup;
 
@@ -77,7 +77,7 @@ public class EzyPayActivity extends AppCompatActivity {
 
                 if (!refid.getText().toString().equals("")&&!amount.getText().toString().equals("")&&!TYPEID.equals("")){
 
-                    Intent intent = new Intent(EzyPayActivity.this, MainTransactionActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), MainTransactionActivity.class);
                     intent.putExtra("RequestData", getEncryptedRequest());
                     intent.putExtra("HeaderData", getEncryptedHeader());
                     intent.putExtra("ReturnTime", 5);// Application return time in second
